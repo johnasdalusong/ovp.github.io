@@ -15,7 +15,7 @@ function getHeaders() {
   };
 }
 function isApiConfigured() {
-  return SUPABASE_KEY && !SUPABASE_KEY.includes('ILAGAY_MO');
+  return SUPABASE_KEY && !SUPABASE_KEY.includes('prmsu_obr_local');
 }
 async function apiGetAll() {
   if (!isApiConfigured()) return getLocalRecords();
